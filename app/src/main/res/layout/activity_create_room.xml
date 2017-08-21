@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.angela.chatroom.CreateRoom">
+
+    <EditText
+        android:layout_width="233dp"
+        android:layout_height="48dp"
+        android:id="@+id/room_edt"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/room_btn"
+        android:layout_toStartOf="@+id/room_btn"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/room_btn"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        tools:layout_editor_absoluteY="450dp"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <Button
+        android:layout_width="121dp"
+        android:layout_height="60dp"
+        android:text="Add room"
+        android:id="@+id/room_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        tools:layout_editor_absoluteY="443dp"
+        tools:layout_editor_absoluteX="255dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="378dp"
+        android:layout_height="406dp"
+        android:layout_above="@+id/room_edt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.111"
+        tools:layout_editor_absoluteX="6dp" />
+
+</android.support.constraint.ConstraintLayout>
